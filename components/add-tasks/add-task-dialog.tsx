@@ -148,7 +148,7 @@ export default function AddTaskDialog({ data }: { data: Doc<"todos"> }) {
         ))}
         <div className="flex gap-2 p-4 w-full justify-end">
           <form onSubmit={(e) => handleDeleteTodo(e)}>
-            <button type="submit">
+            <button type="submit" aria-label="Delete todo">
               <Trash2 className="w-5 h-5" />
             </button>
           </form>

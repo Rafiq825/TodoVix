@@ -14,7 +14,10 @@ import type {
   FilterApi,
   FunctionReference,
 } from "convex/server";
+import type * as auth from "../auth.js";
 import type * as authAdapter from "../authAdapter.js";
+import type * as label from "../label.js";
+import type * as projects from "../projects.js";
 import type * as tasks from "../tasks.js";
 import type * as todos from "../todos.js";
 
@@ -27,7 +30,10 @@ import type * as todos from "../todos.js";
  * ```
  */
 declare const fullApi: ApiFromModules<{
+  auth: typeof auth;
   authAdapter: typeof authAdapter;
+  label: typeof label;
+  projects: typeof projects;
   tasks: typeof tasks;
   todos: typeof todos;
 }>;
