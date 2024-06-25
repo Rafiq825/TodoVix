@@ -17,7 +17,9 @@ import type {
 import type * as auth from "../auth.js";
 import type * as authAdapter from "../authAdapter.js";
 import type * as label from "../label.js";
+import type * as openai from "../openai.js";
 import type * as projects from "../projects.js";
+import type * as subTodos from "../subTodos.js";
 import type * as tasks from "../tasks.js";
 import type * as todos from "../todos.js";
 
@@ -33,7 +35,9 @@ declare const fullApi: ApiFromModules<{
   auth: typeof auth;
   authAdapter: typeof authAdapter;
   label: typeof label;
+  openai: typeof openai;
   projects: typeof projects;
+  subTodos: typeof subTodos;
   tasks: typeof tasks;
   todos: typeof todos;
 }>;
